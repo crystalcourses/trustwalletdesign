@@ -1,3 +1,7 @@
+a {
+    text-decoration: none;
+}
+
 .wrapper{
     display: flex;
     flex-direction: column;
@@ -17,7 +21,7 @@
     align-items: center;
 }
 
-.h1_text{
+.h1_text, .h1_text_sph{
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -47,10 +51,23 @@
     width: 550px; /*  Задаем начальную ширину */
     position: relative;
   }
+  .secret-phrase {
+    display: flex;
+    align-items: center;
+    background-color: #dbdbdb;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 550px; /*  Задаем начальную ширину */
+    position: relative;
+  }
 
   .button_icon {
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -70,16 +87,39 @@
     font-size: 30px;
     color:rgb(55, 55, 55);
   }
-
+  
   .text2 {
+      font-size: 18px;
+      color: #5c5c5c;
+      margin-left: -30px;
+    }
+    
+    .text1_sph {
+      margin-top:10px;
+      margin-bottom: 0;
+      margin-left: -50px;
+      font-size: 30px;
+      color:rgb(55, 55, 55);
+    }
+  .text2_sph{
     font-size: 18px;
     color: #5c5c5c;
-    margin-left: -30px;
+    margin-left: 60px;
   }
 
   @media (max-width: 550px) { /*  Медиазапрос для экранов шириной меньше 550px */
+    .h1_text_sph {
+        font-size: 25px;
+    }
     .create_wallet {
       width: 350px; /*  Кнопка занимает всю ширину */
+    }
+    .button_container_2 {
+        margin-top: 20px;
+    }
+    .secret-phrase{
+        width:350px;
+        padding:0;
     }
     .button_icon {
       width: 50px;
@@ -91,8 +131,17 @@
         font-size: 20px;
         text-align: center;
     }
+    .text1_sph {
+        margin-left: -15px;
+        font-size: 20px;
+        text-align: center;
+    }
     .text2 {
         margin-left: 45px;
+        font-size: 12px;
+        text-align: center;
+    }
+    .text2_sph {
         font-size: 12px;
         text-align: center;
     }
@@ -102,14 +151,29 @@
         margin-top: 40px;
         font-size: 25px;
     }
+    .text1_sph {
+        margin-left:-30px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .text2_sph {
+        margin-left: 55px;
+        font-size: 10px;
+        text-align: center;
+        width:200px
+    }
+
     .button_container{
         margin-top: 5px;
     }
     .create_wallet {
       width: 300px; /*  Кнопка занимает всю ширину */
       height: 100px;
+      margin-bottom: 20px;
+      margin-top: 10px;
     }
     .button_icon {
+        left:20px;
       width: 40px;
       height: 50px;
     }
