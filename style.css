@@ -97,3 +97,31 @@
         text-align: center;
     }
   }
+  @media (max-width: 399px) { /*  Медиазапрос для экранов шириной меньше 550px */
+    .h1_text{
+        margin-top: 40px;
+        font-size: 25px;
+    }
+    .button_container{
+        margin-top: 5px;
+    }
+    .create_wallet {
+      width: 300px; /*  Кнопка занимает всю ширину */
+      height: 100px;
+    }
+    .button_icon {
+      width: 40px;
+      height: 50px;
+    }
+    .text1 {
+        padding-top: 10px;
+        margin-left: 60px;
+        font-size: 16px;
+        text-align: center;
+    }
+    .text2 {
+        margin-left: 50px;
+        font-size: 10px;
+        text-align: center;
+    }
+  }
